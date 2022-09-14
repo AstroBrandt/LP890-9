@@ -26,17 +26,17 @@ cmap = plt.get_cmap("nipy_spectral")
 
 
 # 40-K abundance (in Earth abundances)
-K40 = 1
+K40 = 10.
 
 # Run vplanet
-vplanet.run(path / "vpl.in")
+# vplanet.run(path / "vpl.in")
 
 # TRAPPIST-1 g #
-data = np.loadtxt(path / "LP8909.c.forward")
+data = np.loadtxt( "LP8909.c.forward")
 R_N_Planet = 1.367
 M_N_Planet = 2.5
 Ecc = 0.03984
-Name_Planet = "LP 890-9 b"
+Name_Planet = "LP 890-9 c"
 
 time = data[:, 0]  # time (yr)
 Tpot = data[:, 1]  # Potential temp magma ocean (K)
@@ -228,4 +228,4 @@ ax8.set_xlabel("Time (Myrs)")
 
 plt.subplots_adjust(left=0.1, right=0.95, top=0.93, bottom=0.05, wspace=0.25)
 
-fig.savefig(path / f"LP8909c_0p5T0.pdf", bbox_inches='tight')
+fig.savefig(f"%s/LP8909c_%s.pdf"%(sys.argv[1], sys.argv[2]), bbox_inches='tight')

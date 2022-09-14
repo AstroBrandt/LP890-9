@@ -6,18 +6,18 @@ sColor        7a13d5
 # Physical Properties
 dMass         -2.5                       # Mass, negative -> Earth masses
 dRadius       -1.367                      # Radius, negative -> Earth radii
-dRotPeriod    -1                           # Rotation Period, negative -> days
+dRotPeriod    -8.457                      # Rotation Period, negative -> days
 
 # MAGMOC Properties
 dMassFracFeOIni		0.0788		  # Initial mass fraction of FeO in the mantle (default: 0.0788)
-dWaterMassAtm		-0.5		  # Initial water mass in the system (neg: terrestrial oceans, default: -1)
+dWaterMassAtm		-2		  # Initial water mass in the system (neg: terrestrial oceans, default: -1)
 dSurfTemp		4000		  # Initial surface temperature (default: 4000K)
 dManMeltDensity		4000		  # Mantle melt density (default: 4000kg/m^3)
 bHaltMantleSolidified 	0		  # Halt when mantle solidified? (default: 0 = no, 1 = yes)
 bHaltMantleMeltFracLow  0     # Halt when melt fraction smaller than 0.4 at surface? (default: 0 = no, 1 = yes)
-bHaltAtmDesiSurfCool    0                 # Halt when atmosphere desiccated? (default: 0 = no, 1 = yes)
+bHaltAtmDesiSurfCool                     # Halt when atmosphere desiccated? (default: 0 = no, 1 = yes)
 bHaltEnterHabZone       0                 # Halt when planet enters habitable zone? (default: 0 = no, 1 = yes)
-bHaltAllPlanetsSolid  	0                 # Halt when all planets are soldified	(for multiple planet systems)
+bHaltAllPlanetsSolid  	1                 # Halt when all planets are soldified	(for multiple planet systems)
 bHaltAllPlanetsDesicc 	0                 # Halt when all planets are desiccated (for multiple planet systems)
 sRadioHeatModel		none              # Radiogenic heating model (default: none = RadHeat; schaefer = BSE composition)
 sMagmOcAtmModel 	grey		  # Atmospheric net flux model (default: grey; petit only for GJ1132b-H2O)
@@ -39,24 +39,24 @@ dAtmXAbsEffH2O 		  0.3
 # Scale with planetary mass
 # *Num* are in numbers of atoms, negative -> Earth vals
 ### 40K
-d40KPowerMan    -1
-d40KPowerCore   -0
-d40KPowerCrust  -0.0
+d40KNumMan    -1.0
+d40KNumCore   -0
+d40KNumCrust  -0.0
 
 ### 232Th
-d232ThPowerMan      -1
-d232ThPowerCore     -0
-d232ThPowerCrust    -0
+d232ThNumMan      -1.0
+d232ThNumCore     -0
+d232ThNumCrust    -0
 
 ### 235U
-d235UPowerMan      -1
-d235UPowerCore     -0
-d235UPowerCrust    -0
+d235UNumMan      -1.0
+d235UNumCore     -0
+d235UNumCrust    -0
 
 ### 238U
-d238UPowerMan      -1
-d238UPowerCore     -0
-d238UPowerCrust    -0
+d238UNumMan      -1.0
+d238UNumCore     -0
+d238UNumCrust    -0
 
 # EQTIDE Parameters
 dTidalQ         100		   # Tidal phase lag
