@@ -4,13 +4,13 @@ saModules     magmoc, atmesc, radheat, eqtide       # Modules to apply, exact sp
 sColor        7a13d5
 
 # Physical Properties
-dMass         -25.3                       # Mass, negative -> Earth masses
+dMass         -2.5                       # Mass, negative -> Earth masses
 dRadius       -1.367                      # Radius, negative -> Earth radii
 dRotPeriod    -1                           # Rotation Period, negative -> days
 
 # MAGMOC Properties
 dMassFracFeOIni		0.0788		  # Initial mass fraction of FeO in the mantle (default: 0.0788)
-dWaterMassAtm		-2		  # Initial water mass in the system (neg: terrestrial oceans, default: -1)
+dWaterMassAtm		-0.5		  # Initial water mass in the system (neg: terrestrial oceans, default: -1)
 dSurfTemp		4000		  # Initial surface temperature (default: 4000K)
 dManMeltDensity		4000		  # Mantle melt density (default: 4000kg/m^3)
 bHaltMantleSolidified 	0		  # Halt when mantle solidified? (default: 0 = no, 1 = yes)
@@ -39,22 +39,22 @@ dAtmXAbsEffH2O 		  0.3
 # Scale with planetary mass
 # *Num* are in numbers of atoms, negative -> Earth vals
 ### 40K
-d40KPowerMan    -25.3
+d40KPowerMan    -1
 d40KPowerCore   -0
 d40KPowerCrust  -0.0
 
 ### 232Th
-d232ThPowerMan      -25.3
+d232ThPowerMan      -1
 d232ThPowerCore     -0
 d232ThPowerCrust    -0
 
 ### 235U
-d235UPowerMan      -25.3
+d235UPowerMan      -1
 d235UPowerCore     -0
 d235UPowerCrust    -0
 
 ### 238U
-d238UPowerMan      -25.3
+d238UPowerMan      -1
 d238UPowerCore     -0
 d238UPowerCrust    -0
 

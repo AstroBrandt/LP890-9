@@ -3,7 +3,7 @@ iVerbose      5                             # Verbosity level
 bOverwrite    1                             # Allow file overwrites?
 
 # List of "body files" that contain body-specific parameters
-saBodyFiles   LP8909.in b.in c.in
+saBodyFiles   LP8909.in c.in
 
 # Input/Output Units
 sUnitMass      solar                        # Options: gram, kg, Earth, Neptune, Jupiter, solar
@@ -21,4 +21,4 @@ bDoForward    1                             # Perform a forward evolution?
 bVarDt        1                             # Use variable timestepping?
 dEta          0.01                         # Coefficient for variable timestepping
 dStopTime     1e7                           # Stop time for evolution
-dOutputTime   1e4                           # Output timesteps (assuming in body files)
+dOutputTime   2e3                          # Output timesteps (assuming in body files)

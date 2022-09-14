@@ -4,7 +4,7 @@ saModules     magmoc, atmesc, radheat, eqtide       # Modules to apply, exact sp
 sColor        13aed5
 
 # Physical Properties
-dMass         -13.2                       # Mass, negative -> Earth masses
+dMass         -2.3                       # Mass, negative -> Earth masses
 dRadius       -1.320                     # Radius, negative -> Earth radii
 dRotPeriod    -1                           # Rotation Period, negative -> days
 
@@ -39,22 +39,22 @@ dAtmXAbsEffH2O 		  0.3
 # Scale with the planetary mass
 # *Num* are in numbers of atoms, negative -> Earth vals
 ### 40K
-d40KPowerMan    -13.2
+d40KPowerMan    -1
 d40KPowerCore   -0
 d40KPowerCrust  -0.0
 
 ### 232Th
-d232ThPowerMan      -13.2
+d232ThPowerMan      -1
 d232ThPowerCore     -0
 d232ThPowerCrust    -0
 
 ### 235U
-d235UPowerMan      -13.2
+d235UPowerMan      -1
 d235UPowerCore     -0
 d235UPowerCrust    -0
 
 ### 238U
-d238UPowerMan      -13.2
+d238UPowerMan      -1
 d238UPowerCore     -0
 d238UPowerCrust    -0
 

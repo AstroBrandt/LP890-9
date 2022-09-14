@@ -6,17 +6,16 @@ saModules	stellar, eqtide          # Modules to apply, exact spelling required
 saOutputOrder Age -Luminosity -LXUVStellar -Radius Temperature
 
 # Physical Parameters
-dMass         0.118                       # Mass, solar masses
-dAge          1e6
-
-# STELLAR Parameters
-sStellarModel baraffe                     # Stellar evolution model: `baraffe` or `none`
-dSatXUVFrac   1.e-3                       # Saturation level of the XUV luminosity
-dSatXUVTime   -0.1			  # End of XUV-Saturation (- in Gyr, default .1Gyr)
+sStellarModel             baraffe     # stellar model grid
+dMass                     0.118        # stellar mass [msun]
+dAge                      5e6         # age at which stellar grids are initialized [yr] (this is a fixed parameter)
+dSatXUVFrac               0.00120226        # fsat = initial Lxuv / Lbol [dimensionless ratio]
+dSatXUVTime               3e9        # tsat = saturation time [yr]
+dXUVBeta                  1.18       # beta = exponential decay rate [dimensionless]
 
 # EQTIDE Parameters
 dTidalQ         100          # Tidal phase lag
 dK2             0.5          # Love number of degree 2
 dMaxLockDiff    0.1
 sTideModel      p2           # Tidal model, p2=CPL, t8=CTL
-saTidePerts     b c         # Body name(s) of tidal perturbers
+saTidePerts     c         # Body name(s) of tidal perturbers
