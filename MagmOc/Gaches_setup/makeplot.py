@@ -26,7 +26,7 @@ cmap = plt.get_cmap("nipy_spectral")
 
 
 # 40-K abundance (in Earth abundances)
-K40 = 10.
+K40 = 1
 
 # Run vplanet
 # vplanet.run(path / "vpl.in")
