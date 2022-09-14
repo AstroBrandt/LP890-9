@@ -66,7 +66,7 @@ saTidePerts     LP8909          # Body name(s) of tidal perturbers
 
 # Orbital Properties
 dSemi         -0.03984              # Semi-major axis, negative -> AU
-dEcc          0.00                  # Eccentricity
+dEcc          0.000                  # Eccentricity
 
 # Output
 saOutputOrder Time -PotTemp -SurfTemp -SolidRadius -WaterMassMOAtm -WaterMassSol -OxygenMassMOAtm -OxygenMassSol -PressWaterAtm -PressOxygenAtm -HydrogenMassSpace -OxygenMassSpace FracFe2O3Man NetFluxAtmo WaterFracMelt -RadioPower -TidalPower $
